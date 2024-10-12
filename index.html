@@ -161,7 +161,7 @@
 		h1.title {
 			font-family: 'Archivo', Verdana, Geneva, Tahoma, sans-serif;
 			color: #ffffff;
-			font-size: 30pt;
+			font-size: 35pt;
 			font-weight: lighter;
 		}
 
@@ -221,6 +221,7 @@
 		.aboutblock {
 			display: flex;
 			flex-direction: row;
+			align-items: start;
 		}
 		.aboutblock .article {
 			display: flex;
@@ -316,6 +317,80 @@
 			font-family: 'JetBrains Mono';
 			font-size: 11pt;
 		}
+
+		/* Mobile Responsiveness */
+		@media only screen and (max-width: 1100px) {
+			.projects {
+				flex-direction: column;
+				flex-wrap: nowrap;
+			}
+
+			.projects .projectposts .post {
+				flex-basis: 100%;
+				width: 100%;
+			}
+
+			.block {
+				padding: 80px;
+			}
+		}
+
+		@media only screen and (max-width: 900px) {
+			.heroblock {
+
+			}
+			.aboutblock {
+				flex-direction: column;
+			}
+
+			.aboutblock .image {
+				width: 100%;
+				height: fit-content;
+			}
+			
+			.block {
+				padding: 70px;
+			}
+
+			h3.name {
+				font-size: 10pt;
+			}
+
+			h1.title {
+				font-size: 25pt;
+			}
+
+			h2.subtitle {
+				font-size: 15pt;
+			}
+
+			.heroblock a {
+				font-size: 10pt;
+			}
+
+			.block h1 {
+				font-size: 20pt;
+			}
+
+			.block p {
+				font-size: 12pt;
+			}
+		}
+
+		@media only screen and (max-width: 600px) {
+			.navbar {
+				justify-content: center;
+			}
+
+			/* The links are a bit redundant anyway, I've gotten this far without using JS and a hamburger menu */
+			.navbar .links {
+				display: none;
+			}
+
+			.block {
+				padding: 30px;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -351,7 +426,7 @@
 				Duis iaculis lectus ipsum, a feugiat felis ornare in. In auctor porttitor urna, ut mattis nunc molestie ut. Integer elementum tempus pharetra. Fusce non est a lacus pharetra lacinia. Fusce quis orci tincidunt, aliquet magna sit amet, feugiat ante. Suspendisse blandit ipsum at velit pretium, nec rhoncus quam laoreet. Aliquam erat volutpat. Mauris commodo euismod tempor. Mauris eu erat vel urna ultricies pellentesque. In luctus augue non molestie scelerisque. Fusce ultricies finibus odio, sit amet dignissim magna volutpat a.
 			</p>
 		</div>
-		<div class="image"></div>
+		<img src="./aboutPicture.svg" alt="Filler Picture" class="image">
 	</div>
 	<div class="projects block" id="projects">
 		<h1>My Projects</h1>
@@ -396,7 +471,7 @@
 	</div>
 
 	<div class="block footer">
-		<p>&copy;John Shrubb 2024</p>
+		<p>(C) John Shrubb 2024</p>
 		<p>All Rights Reserved</p>
 	</div>
 </body>
