@@ -39,7 +39,7 @@
 
 			--primary: #ea7000;
 			--secondary: #ffa757;
-			--box-bg: #140600;
+			--box-bg: #140600b9;
 		}
 
 		/*
@@ -215,6 +215,18 @@
 		.block p {
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 			font-size: 15pt;
+		}
+
+		.block a {
+			font-size: 15pt;
+			color: var(--secondary);
+			text-decoration: none;
+		}
+
+		.block a:hover {
+			color: var(--primary);
+			text-decoration: underline;
+			transition-duration: 300ms;
 		}
 
 		/*
@@ -419,18 +431,18 @@
 		<div class="article">
 			<h1>About Me</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae pretium mi. Sed sit amet vulputate nibh, vitae hendrerit tortor. Sed quis enim quis nibh auctor varius at in nulla. Sed sollicitudin tincidunt odio, et lobortis enim euismod id. Sed commodo, purus ut rhoncus gravida, felis quam eleifend massa, aliquam molestie tellus libero a lectus. Donec vitae arcu nec lacus egestas consequat. Mauris condimentum euismod aliquam. Mauris id leo viverra, rutrum sem at, egestas dui. Sed vel neque orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ac sapien nec sem luctus ultricies sed in diam.
+				Hi! I'm a hobbyist software developer based in the UK. I work on projects purely for fun and commonly experiment with new technologies to enhance my skillset.
 
 				<br><br>
 
-				Mauris erat erat, fringilla eu leo ut, sollicitudin maximus dui. Quisque ipsum lacus, dignissim in quam nec, euismod vulputate dui. Nulla ullamcorper laoreet turpis, in efficitur arcu commodo vitae. In laoreet, neque eget fermentum commodo, lacus felis rhoncus erat, in aliquam nulla orci malesuada enim. Pellentesque tincidunt metus a massa mattis vehicula quis eget elit. Nulla gravida vitae ipsum sit amet bibendum. Sed sed mi nunc. Nam eu ultrices mi. Sed auctor facilisis lacus, vitae euismod sapien.
+				<a href="#projects">See what I've worked on below.</a> Be aware some projects are still WiP, such as TroubleTracker, my approach to ticket management.
 
 				<br><br>
-				 
-				Duis iaculis lectus ipsum, a feugiat felis ornare in. In auctor porttitor urna, ut mattis nunc molestie ut. Integer elementum tempus pharetra. Fusce non est a lacus pharetra lacinia. Fusce quis orci tincidunt, aliquet magna sit amet, feugiat ante. Suspendisse blandit ipsum at velit pretium, nec rhoncus quam laoreet. Aliquam erat volutpat. Mauris commodo euismod tempor. Mauris eu erat vel urna ultricies pellentesque. In luctus augue non molestie scelerisque. Fusce ultricies finibus odio, sit amet dignissim magna volutpat a.
+
+				Want to talk? <a href="#contact">Contact me.</a>
 			</p>
 		</div>
-		<img src="./aboutPicture.svg" alt="Filler Picture" class="image">
+		<!-- <img src="./aboutPicture.svg" alt="Filler Picture" class="image"> -->
 	</div>
 	<div class="projects block" id="projects">
 		<h1>My Projects</h1>
