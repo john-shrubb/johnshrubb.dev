@@ -38,8 +38,11 @@
 			--dark-bg: #090909;
 
 			--primary: #ea7000;
+			--primary-active: #8b4300;
 			--secondary: #ffa757;
 			--box-bg: #140600;
+
+			--link-active: #999999;
 		}
 
 		/*
@@ -128,8 +131,12 @@
 		}
 
 		.links a:hover {
-			color: var(--secondary);
+			color: var(--primary);
 			transition-duration: 200ms;
+		}
+
+		.links a:active {
+			color: var(--primary-active);
 		}
 
 		.titlenav {
@@ -189,6 +196,10 @@
 			transition-duration: 400ms;
 		}
 
+		.heroblock a:active {
+			color: var(--link-active);
+		}
+
 		/*
 			Generic block stuff
 		*/
@@ -231,6 +242,10 @@
 			color: var(--primary);
 			text-decoration: underline;
 			transition-duration: 300ms;
+		}
+
+		.block a:active {
+			color: var(--primary-active);
 		}
 
 		/*
@@ -284,12 +299,17 @@
 			margin-top: 20px;
 			color: #42261a;
 			font-size: 15pt;
+			font-family: 'JetBrains Mono', monospace;
 			text-decoration: none;
 		}
 
 		.projects .projectposts .post a:hover {
 			color: white;
 			transition-duration: 200ms;
+		}
+
+		.projects .projectposts .post a:active {
+			color: var(--link-active);
 		}
 
 		/*
@@ -323,6 +343,11 @@
 		.contact a:hover {
 			color: white;
 			transition-duration: 200ms;
+		}
+
+		.contact a:active {
+			color: var(--link-active);
+			text-decoration: underline;
 		}
 
 		/*
